@@ -1,0 +1,19 @@
+
+.control-btns-container {
+  display: flex;
+  width: 760px;
+  justify-content: space-between;
+  margin: 0 auto;
+  background: #262829;
+  align-items: center;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.left > button {
+  margin: 5px 5px 5px 5px;
+}
+
+.counter {
+  color: #DADADA !important;
+}

@@ -1,0 +1,16 @@
+.main-wrapper {
+  margin: 0 auto;
+  width: 900px;
+  text-align: center;
+  height: 90%;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 18px;
+  margin-right: 5px;
+}

@@ -1,0 +1,49 @@
+<div class="control-btns-container">
+  <div class="left">
+    <button
+      mat-mini-fab
+      color="primary"
+      [disabled]="isEvolution"
+      (click)="onPlayClicked()"
+    >
+      <mat-icon>play_arrow</mat-icon>
+    </button>
+
+    <button
+      mat-mini-fab
+      color="accent"
+      [disabled]="!isEvolution"
+      (click)="onStopClicked()"
+    >
+      <mat-icon>stop</mat-icon>
+    </button>
+
+    <button mat-mini-fab color="warn" (click)="onResetClicked()">
+      <mat-icon>clear</mat-icon>
+    </button>
+
+    <button
+      mat-mini-fab
+      color="primary"
+      (click)="onRandomClicked()"
+      [disabled]="isEvolution"
+    >
+      <mat-icon>casino</mat-icon>
+    </button>
+
+    <button mat-mini-fab disabled class="counter">
+      {{ generations }}
+    </button>
+  </div>
+
+  <div class="right">
+    <mat-slider
+      min="1"
+      max="1000"
+      step="100"
+      [value]="speed"
+      [(ngModel)]="speed"
+      invert="true"
+    ></mat-slider>
+  </div>
+</div>

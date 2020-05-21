@@ -1,0 +1,11 @@
+<div class="grid">
+  <div *ngFor="let row of grid">
+    <div
+      class="cell"
+      [ngClass]="cell.isAlive() ? 'green' : 'gray'"
+      *ngFor="let cell of row"
+      (click)="onCellClick(cell)"
+    ></div>
+
+  </div>
+</div>

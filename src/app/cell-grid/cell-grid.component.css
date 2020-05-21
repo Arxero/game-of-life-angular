@@ -1,0 +1,22 @@
+.grid {
+  display: flex;
+  justify-content: center;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  background: #dadada;
+  border: 1px solid #111111;
+}
+
+.gray {
+  background: #262829;
+}
+
+.green {
+  background: #25a51f;
+}
+
+
+
